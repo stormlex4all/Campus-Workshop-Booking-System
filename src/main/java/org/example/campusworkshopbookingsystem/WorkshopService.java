@@ -51,15 +51,15 @@ public class WorkshopService {
     @Transactional
     public Optional<WorkshopResponse> update(Long id, WorkshopRequest request) {
         return repository.findById(id)
-                .map(existing -> {
-                    existing.changeDetails(
-                            request.title(),
-                            request.category(),
-                            request.presenter(),
-                            request.durationMinutes(),
-                            request.capacity());
+            .map(existing -> {
+                existing.changeDetails(
+                        request.title(),
+                        request.category(),
+                        request.presenter(),
+                        request.durationMinutes(),
+                        request.capacity());
 
-                    return WorkshopResponse.fromWorkshop(existing);
+                return WorkshopResponse.fromWorkshop(existing);
         });
     }
 
