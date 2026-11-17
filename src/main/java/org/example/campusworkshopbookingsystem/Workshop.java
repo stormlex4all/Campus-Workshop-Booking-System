@@ -6,7 +6,7 @@ import jakarta.persistence.*;
 @Table(name = "workshop")
 public class Workshop {
 
-    public Workshop() {}
+    protected Workshop() {}
 
     public Workshop(String title, String category, String presenter, Integer durationMinutes, Integer capacity) {
         this.title = title;

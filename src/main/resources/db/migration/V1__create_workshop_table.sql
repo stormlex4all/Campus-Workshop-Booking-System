@@ -1,8 +1,8 @@
--- create database workshop;
---
--- create user 'workshop_user'@'localhost' identified by 'workshop123';
---
--- grant all privileges on workshop.* to 'workshop_user'@'localhost';
+# create database workshop_hub;
+#
+# create user 'workshop_user'@'localhost' identified by 'workshop123';
+#
+# grant all privileges on workshop.* to 'workshop_user'@'localhost';
 
 CREATE TABLE workshop (
       id               BIGINT       AUTO_INCREMENT PRIMARY KEY,
