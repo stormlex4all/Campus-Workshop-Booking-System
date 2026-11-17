@@ -45,7 +45,7 @@ public class WorkshopService {
                 request.durationMinutes(),
                 request.capacity());
 
-        return WorkshopResponse.fromWorkshop(workshop);
+        return WorkshopResponse.fromWorkshop(repository.save(workshop));
     }
 
     @Transactional
